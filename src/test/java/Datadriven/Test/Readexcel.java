@@ -25,9 +25,8 @@ public class Readexcel {
 	@Test
 	public void fblogin() throws IOException {
 
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\vaibh\\Downloads\\edgedriver_win64\\msedgedriver.exe");
-		  WebDriver driver = new EdgeDriver();
-		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\vaibh\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+	    WebDriver driver = new ChromeDriver();
 		driver.get("http://www.facebook.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MILLISECONDS);
